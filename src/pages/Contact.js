@@ -1,11 +1,11 @@
-import React from "react";
 import NormalLayout from "layouts/NormalLayout";
+import React from "react";
 
 export default class Contact extends React.Component {
 
   render() {
     return (
-        <NormalLayout>
+        <NormalLayout title="Contact">
             <h1>Contact</h1>
         </NormalLayout>
     );

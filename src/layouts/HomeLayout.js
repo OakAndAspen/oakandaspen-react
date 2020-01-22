@@ -1,15 +1,39 @@
+import Carousel from "components/Carousel";
+import Nav from "components/Nav";
+import TitleBar from "components/TitleBar";
+import background from "images/background.jpg";
 import React from "react";
 
 export default class HomeLayout extends React.Component {
 
     render() {
+
+        let headerStyle = {
+            backgroundImage: "url(" + background + ")",
+            backgroundSize: "cover",
+            backgroundPosition: "center center"
+        };
+
         return (
             <div>
-                <header>
-                    Big header
+                <header className="py-4" style={headerStyle}>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-10 mx-auto">
+                                <TitleBar theme="light"/>
+                                <hr className="border-light"/>
+                                <Nav theme="light"/>
+                                <Carousel/>
+                            </div>
+                        </div>
+                    </div>
                 </header>
-                <section>
-                    {this.props.children}
+                <section className="container py-4">
+                    <div className="row">
+                        <div className="col-lg-10 mx-auto">
+                            {this.props.children}
+                        </div>
+                    </div>
                 </section>
             </div>
         );

@@ -1,12 +1,13 @@
-import React from "react";
-import {BrowserRouter as Router, Redirect, Route, Switch} from "react-router-dom";
+import "App.css";
+import "config/fa-brand.config";
 import About from "pages/About";
 import Blog from "pages/Blog";
 import Contact from "pages/Contact";
 import Home from "pages/Home";
 import Portfolio from "pages/Portfolio";
 import Services from "pages/Services";
-import "App.css";
+import React from "react";
+import {BrowserRouter as Router, Redirect, Route, Switch} from "react-router-dom";
 
 export default class App extends React.Component {
 
