@@ -1,3 +1,9 @@
+import biodi from "images/biodi.png";
+import generationConnect from "images/generation-connect.png";
+import mtgmanager from "images/mtgmanager.png";
+import viviskes from "images/viviskes.png";
+import pawsome from "images/pawsome.png";
+
 export default {
     nav: {
         home: "Home",
@@ -36,5 +42,37 @@ export default {
             text: "I'm currently looking for freelance jobs. Don't hesitate to contact me by email or through my contact form.",
             button: "Contact me"
         }
+    },
+    portfolio: {
+        title: "Portfolio",
+        subtitle: "Browse my projects",
+        text: "From web development to marketing campaigns, from personal projects to team projects, I have accumulated a large range of skills.",
+        projects: [
+            {
+                name: "Viviskes",
+                description: "Website and intranet of a celtic reenactment association",
+                image: viviskes
+            },
+            {
+                name: "Paw'some",
+                description: "First prototype for my startup project, since renamed Pup'herd",
+                image: pawsome
+            },
+            {
+                name: "Generation Connect",
+                description: "Prototype of a web platform to put young people at the service of the elderly. Team project during my studies",
+                image: generationConnect
+            },
+            {
+                name: "Biodi-vers-City",
+                description: "Marketing campaign for BirdLife. Team project during my studies",
+                image: biodi
+            },
+            {
+                name: "MtGManager",
+                description: "Collectible cards management app for my personal use",
+                image: mtgmanager
+            }
+        ]
     }
 };
