@@ -126,5 +126,17 @@ export default {
                 },
             ]
         }
+    },
+    contact: {
+        form: {
+            title: "Contact form",
+            name: "Your name",
+            email: "Your email address",
+            message: "Your message",
+            button: "Send"
+        },
+        title1: "My workplace",
+        title2: "Contact information",
+        text: "Feel free to email at any time. I will do my best to answer quickly."
     }
 };

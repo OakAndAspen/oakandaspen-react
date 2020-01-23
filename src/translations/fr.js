@@ -130,5 +130,17 @@ export default {
                 }
             ]
         }
+    },
+    contact: {
+        form: {
+            title: "Formulaire de contact",
+            name: "Votre nom",
+            email: "Votre adresse email",
+            message: "Votre message",
+            button: "Envoyer"
+        },
+        title1: "Mon lieu de travail",
+        title2: "Informations de contact",
+        text: "N'hésitez pas à m'envoyer un email à tout moment. Je ferai de mon mieux pour répondre rapidement."
     }
 };
