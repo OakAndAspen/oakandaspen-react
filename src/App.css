@@ -13,3 +13,11 @@
 .pointer {
     cursor: pointer;
 }
+
+.logo {
+    font-family: "Pacifico", sans-serif;
+}
+
+footer p {
+    font-size: 0.9em;
+}

@@ -1,4 +1,5 @@
 import Carousel from "components/Carousel";
+import Footer from "components/Footer";
 import Nav from "components/Nav";
 import TitleBar from "components/TitleBar";
 import background from "images/background.jpg";
@@ -35,6 +36,7 @@ export default class HomeLayout extends React.Component {
                         </div>
                     </div>
                 </section>
+                <Footer/>
             </div>
         );
     }

@@ -1,5 +1,5 @@
 import {FontAwesomeIcon as FAI} from "@fortawesome/react-fontawesome";
-import "App.css";
+import {facebookLink, gitHubLink, linkedInLink} from "config/config";
 import React from "react";
 
 export default class TitleBar extends React.Component {
@@ -7,9 +7,9 @@ export default class TitleBar extends React.Component {
     render() {
 
         let links = [
-            {icon: "facebook-f", title: "Facebook", url: "https://www.facebook.com/alerya.despot"},
-            {icon: "linkedin-in", title: "LinkedIn", url: "https://www.linkedin.com/in/irina-despot"},
-            {icon: "github-alt", title: "GitHub", url: "https://github.com/OakAndAspen"}
+            {icon: "facebook-f", title: "Facebook", url: facebookLink},
+            {icon: "linkedin-in", title: "LinkedIn", url: linkedInLink},
+            {icon: "github-alt", title: "GitHub", url: gitHubLink}
         ];
 
         let logoStyle = {
