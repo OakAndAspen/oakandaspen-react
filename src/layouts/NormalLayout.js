@@ -30,7 +30,7 @@ export default class NormalLayout extends React.Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-10 mx-auto py-4">
-                                    <h2 className="text-light font-weight-bold m-0 small-caps">
+                                    <h2 className="t-white font-weight-bold m-0 small-caps">
                                         {this.props.title}
                                     </h2>
                                 </div>

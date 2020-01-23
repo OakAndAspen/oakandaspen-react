@@ -38,7 +38,7 @@ export default class Nav extends React.Component {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         {entries.map(e =>
-                            <li className="nav-item active">
+                            <li className="nav-item active" key={e.label}>
                                 <a className={"nav-link text-" + linkColor}
                                    href={"/" + langCode + e.url} style={aStyle}>{e.label}</a>
                             </li>

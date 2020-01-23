@@ -30,13 +30,16 @@ export default class TitleBar extends React.Component {
                 <h1 style={logoStyle}>Oak&Aspen</h1>
                 <span className="ml-auto">
                     {languages.map(l =>
-                        <a href={"/" + l} style={linkStyle} className={"mr-3 small-caps text-" + textColor}>{l}</a>
+                        <a href={"/" + l} style={linkStyle} key={l}
+                           className={"mr-3 small-caps text-" + textColor}>
+                            {l}
+                        </a>
                     )}
                 </span>
                 <span>
                     {links.map(l =>
-                        <a href={l.url} title={l.title} className={"ml-2 py-1 px-2 bg-" + linkBackground}
-                           style={linkStyle}>
+                        <a href={l.url} title={l.title} style={linkStyle} key={l.title}
+                           className={"ml-2 py-1 px-2 bg-" + linkBackground}>
                             <FAI icon={["fab", l.icon]} className={"text-" + linkColor}/>
                         </a>
                     )}

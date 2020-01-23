@@ -1,5 +1,6 @@
-import "App.css";
+import "styles/main.css";
 import "config/fa-brand.config";
+import "config/fa-regular.config";
 import About from "pages/About";
 import Blog from "pages/Blog";
 import Contact from "pages/Contact";

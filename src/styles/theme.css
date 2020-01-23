@@ -1,0 +1,47 @@
+.t-white {
+    color: #FFFFFF
+}
+
+.b-white {
+    background-color: #FFFFFF
+}
+
+.t-light {
+    color: #DFDCDC
+}
+
+.b-light {
+    background-color: #DFDCDC
+}
+
+.t-gray {
+    color: #9A9898
+}
+
+.b-gray {
+    background-color: #9A9898
+}
+
+.t-dark {
+    color: #333333
+}
+
+.b-dark {
+    background-color: #333333
+}
+
+.t-green {
+    color: #87b672;
+}
+
+.b-green {
+    background-color: #87b672;
+}
+
+a, a:visited {
+    color: #87b672;
+}
+
+a:hover {
+    color: #87b672;
+}
