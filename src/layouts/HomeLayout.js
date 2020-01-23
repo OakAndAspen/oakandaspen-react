@@ -23,7 +23,7 @@ export default class HomeLayout extends React.Component {
                             <div className="col-lg-10 mx-auto">
                                 <TitleBar theme="light"/>
                                 <hr className="border-light"/>
-                                <Nav theme="light"/>
+                                <Nav theme="light" lang={this.props.lang}/>
                                 <Carousel/>
                             </div>
                         </div>

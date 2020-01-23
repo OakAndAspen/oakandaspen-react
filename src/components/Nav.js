@@ -1,8 +1,14 @@
+import {languages} from "config/config";
 import React from "react";
+import {getLanguage} from "utils";
 
 export default class Nav extends React.Component {
 
     render() {
+
+        let langCode = languages.includes(this.props.lang) ? this.props.lang : languages[0];
+        let lang = getLanguage(langCode);
+
         let navStyle = {
             fontVariant: "all-small-caps"
         };
@@ -13,12 +19,12 @@ export default class Nav extends React.Component {
         };
 
         let entries = [
-            {label: "Home", url: "/"},
-            {label: "Portfolio", url: "/portfolio"},
-            {label: "Services", url: "/services"},
-            {label: "Blog", url: "/blog"},
-            {label: "About", url: "/about"},
-            {label: "Contact me", url: "/contact"}
+            {label: lang.nav.home, url: "/"},
+            {label: lang.nav.portfolio, url: "/portfolio"},
+            {label: lang.nav.services, url: "/services"},
+            {label: lang.nav.blog, url: "/blog"},
+            {label: lang.nav.about, url: "/about"},
+            {label: lang.nav.contact, url: "/contact"}
         ];
 
         let linkColor = this.props.theme === "light" ? "light" : "secondary";
@@ -34,7 +40,7 @@ export default class Nav extends React.Component {
                         {entries.map(e =>
                             <li className="nav-item active">
                                 <a className={"nav-link text-" + linkColor}
-                                   href={"/fr" + e.url} style={aStyle}>{e.label}</a>
+                                   href={"/" + langCode + e.url} style={aStyle}>{e.label}</a>
                             </li>
                         )}
                     </ul>

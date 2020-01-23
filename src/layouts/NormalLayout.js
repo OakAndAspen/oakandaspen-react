@@ -22,7 +22,7 @@ export default class NormalLayout extends React.Component {
                             <div className="col-lg-10 mx-auto">
                                 <TitleBar theme="dark"/>
                                 <hr className="border-secondary"/>
-                                <Nav theme="dark"/>
+                                <Nav theme="dark" lang={this.props.lang}/>
                             </div>
                         </div>
                     </div>
