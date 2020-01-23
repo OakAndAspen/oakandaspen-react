@@ -45,7 +45,7 @@ export default class NormalLayout extends React.Component {
                         </div>
                     </div>
                 </section>
-                <Footer/>
+                <Footer lang={this.props.lang}/>
             </div>
         );
     }

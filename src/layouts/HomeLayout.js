@@ -36,7 +36,7 @@ export default class HomeLayout extends React.Component {
                         </div>
                     </div>
                 </section>
-                <Footer/>
+                <Footer lang={this.props.lang}/>
             </div>
         );
     }

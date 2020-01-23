@@ -1,10 +1,14 @@
 import {FontAwesomeIcon as FAI} from "@fortawesome/react-fontawesome";
-import {facebookLink, gitHubLink, linkedInLink} from "config/config";
+import {facebookLink, gitHubLink, languages, linkedInLink} from "config/config";
 import React from "react";
+import {getLanguage} from "utils";
 
 export default class Footer extends React.Component {
 
     render() {
+        let langCode = languages.includes(this.props.lang) ? this.props.lang : languages[0];
+        let lang = getLanguage(langCode);
+
         return (
             <footer className="bg-dark">
                 <div className="container py-4">
@@ -13,17 +17,15 @@ export default class Footer extends React.Component {
                             <div className="row">
                                 <div className="col-lg-6">
                                     <h3 className="logo mb-4 t-white">Oak&Aspen</h3>
-                                    <p className="t-gray">After finishing my studies in media engineering, I
-                                        chose the hard way: entrepreneurship. I'm trying to reconcile my work as a
-                                        freelancer and my startup project.</p>
+                                    <p className="t-gray">{lang.footer.text}</p>
                                 </div>
                                 <div className="col-sm-6 col-lg-3">
                                     <h4 className="small-caps font-weight-bold mb-4 t-white">Contact info</h4>
                                     <p className="t-gray">
-                                        Rue des Prés-du-Moulin 3<br/>
-                                        1920 Martigny (VS) <br/>
-                                        Suisse / Switzerland <br/><br/>
-                                        contact@oakandaspen.ch
+                                        {lang.footer.address.street}<br/>
+                                        {lang.footer.address.city}<br/>
+                                        {lang.footer.address.country}<br/><br/>
+                                        <a href="mailto:contact@oakandaspen.ch">contact@oakandaspen.ch</a>
                                     </p>
                                 </div>
                                 <div className="col-sm-6 col-lg-3">
@@ -46,10 +48,10 @@ export default class Footer extends React.Component {
                             <hr className="border-secondary"/>
 
                             <p className="font-weight-bold text-center my-4">
-                                <span className="small-caps">Development, design and content by </span>
+                                <span className="small-caps">{lang.footer.copyright.line1} </span>
                                 <span className="logo">Oak&Aspen</span><br/>
                                 <span className="small-caps">
-                                    copyright {new Date().getFullYear()} | all rights reserved
+                                    copyright {new Date().getFullYear()} | {lang.footer.copyright.line2}
                                 </span>
                             </p>
                         </div>
