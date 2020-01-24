@@ -38,7 +38,7 @@
     background-color: #87b672;
 }
 
-a, a:visited {
+a:not(.btn), a:not(.btn):visited {
     color: #87b672;
 }
 

@@ -16,6 +16,11 @@ export default {
         about: "À propos",
         contact: "Contact",
     },
+    footnote: {
+        title: "Vous avez une idée de projet?",
+        text: "Je suis actuellement à la recherche de mandats. N'hésitez pas à me contacter par email ou via mon formulaire de contact.",
+        button: "Contactez moi"
+    },
     footer: {
         text: "Après avoir terminé mes études en ingénierie des médias en été 2019, j'ai choisi la voie difficile de l'entreprenariat. Je tente actuellement de concilier mon travail de développeur en freelance et mon projet de startup.",
         address: {
@@ -51,11 +56,6 @@ export default {
         ],
         latestWork: {
             title: "Quelques projets récents"
-        },
-        footnote: {
-            title: "Vous avez une idée de projet?",
-            text: "Je suis actuellement à la recherche de mandats. N'hésitez pas à me contacter par email ou via mon formulaire de contact.",
-            button: "Contactez moi"
         }
     },
     portfolio: {
@@ -69,14 +69,14 @@ export default {
                 image: viviskes
             },
             {
+                name: "MtGManager",
+                description: "Application de gestion de cartes à collectionner pour mon usage personnel",
+                image: mtgmanager
+            },
+            {
                 name: "Paw'some",
                 description: "Premier prototype pour mon projet de startup, depuis renommé Pup'herd",
                 image: pawsome
-            },
-            {
-                name: "Generation Connect",
-                description: "Prototype d'une plateforme pour GenerationConnect. Projet en équipe effectué dans le cadre de mes études",
-                image: generationConnect
             },
             {
                 name: "Biodi-vers-City",
@@ -84,9 +84,9 @@ export default {
                 image: biodi
             },
             {
-                name: "MtGManager",
-                description: "Application de gestion de cartes à collectionner pour mon usage personnel",
-                image: mtgmanager
+                name: "Generation Connect",
+                description: "Prototype d'une plateforme pour GenerationConnect. Projet en équipe effectué dans le cadre de mes études",
+                image: generationConnect
             }
         ]
     },

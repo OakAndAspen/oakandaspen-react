@@ -16,6 +16,11 @@ export default {
         about: "About",
         contact: "Contact me",
     },
+    footnote: {
+        title: "Have a project idea?",
+        text: "I'm currently looking for freelance jobs. Don't hesitate to contact me by email or through my contact form.",
+        button: "Contact me"
+    },
     footer: {
         text: "After finishing my studies in media engineering, I chose the hard way of entrepreneurship. I'm trying to reconcile my work as a freelancer and my startup project.",
         address: {
@@ -51,11 +56,6 @@ export default {
         ],
         latestWork: {
             title: "Some of my latest work"
-        },
-        footnote: {
-            title: "Have a project idea?",
-            text: "I'm currently looking for freelance jobs. Don't hesitate to contact me by email or through my contact form.",
-            button: "Contact me"
         }
     },
     portfolio: {
@@ -69,14 +69,14 @@ export default {
                 image: viviskes
             },
             {
+                name: "MtGManager",
+                description: "Collectible cards management app for my personal use",
+                image: mtgmanager
+            },
+            {
                 name: "Paw'some",
                 description: "First prototype for my startup project, since renamed Pup'herd",
                 image: pawsome
-            },
-            {
-                name: "Generation Connect",
-                description: "Prototype of a web platform to put young people at the service of the elderly. Team project during my studies",
-                image: generationConnect
             },
             {
                 name: "Biodi-vers-City",
@@ -84,9 +84,9 @@ export default {
                 image: biodi
             },
             {
-                name: "MtGManager",
-                description: "Collectible cards management app for my personal use",
-                image: mtgmanager
+                name: "Generation Connect",
+                description: "Prototype of a web platform to put young people at the service of the elderly. Team project during my studies",
+                image: generationConnect
             }
         ]
     },
