@@ -1,3 +1,4 @@
+import Badge from "components/Badge";
 import Footnote from "components/Footnote";
 import HomeLayout from "layouts/HomeLayout";
 import NormalLayout from "layouts/NormalLayout";
@@ -23,6 +24,7 @@ export default class Portfolio extends React.Component {
                         <div className="col-md-6 mx-auto my-4" key={p.name}>
                             <h4 className="my-4 font-weight-bold">{p.name}</h4>
                             <img src={p.image} alt={p.name} className="img-fluid mb-4 border b-gray border"/>
+                            <p>{p.tags.map(t => <Badge content={t}/>)}</p>
                             <p>{p.description}</p>
                         </div>
                     )}

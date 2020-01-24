@@ -65,26 +65,31 @@ export default {
         projects: [
             {
                 name: "Viviskes",
+                tags: ["Symfony", "React", "MySQL"],
                 description: "Website and intranet of a celtic reenactment association",
                 image: viviskes
             },
             {
                 name: "MtGManager",
+                tags: ["Symfony", "React", "MySQL"],
                 description: "Collectible cards management app for my personal use",
                 image: mtgmanager
             },
             {
                 name: "Paw'some",
+                tags: ["Symfony", "React", "MySQL"],
                 description: "First prototype for my startup project, since renamed Pup'herd",
                 image: pawsome
             },
             {
                 name: "Biodi-vers-City",
+                tags: ["React", "Illustrator", "Team project"],
                 description: "Marketing campaign for BirdLife. Team project during my studies",
                 image: biodi
             },
             {
                 name: "Generation Connect",
+                tags: ["Backbone", "Team project"],
                 description: "Prototype of a web platform to put young people at the service of the elderly. Team project during my studies",
                 image: generationConnect
             }
