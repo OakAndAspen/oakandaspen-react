@@ -24,6 +24,7 @@ export default class App extends React.Component {
                         <Route exact path='/:lang/portfolio' component={Portfolio}/>
                         <Route exact path='/:lang/services' component={Services}/>
                         <Route exact path='/:lang/blog' component={Blog}/>
+                        <Route exact path='/:lang/blog/:id' component={Blog}/>
                         <Route exact path='/:lang/about' component={About}/>
                         <Route exact path='/:lang/contact' component={Contact}/>
                     </Switch>

@@ -1,8 +1,11 @@
+import blog1 from "articles/blog1.md";
+import blog2 from "articles/blog2.md";
+import blog3 from "articles/blog3.md";
 import biodi from "images/biodi.png";
 import generationConnect from "images/generation-connect.png";
 import mtgmanager from "images/mtgmanager.png";
-import viviskes from "images/viviskes.png";
 import pawsome from "images/pawsome.png";
+import viviskes from "images/viviskes.png";
 
 export default {
     nav: {
@@ -114,6 +117,30 @@ export default {
         tools: ["HTML", "CSS", "Javascript", "PHP", "MySQL", "React", "Symfony", "Grav", "Figma", "Illustrator", "PHPStorm", "WebStorm", "DataGrip", "Infomaniak", "DigitalOcean", "Bootstrap", "FontAwesome", "jQuery", "Doctrine"],
         title2: "How I work",
         text: "Do not hesitate to contact me if you have an idea. We will discuss your situation and I will make a proposal that fits your needs. I like to work with the \"agile\" method and implement your project through multiple cycles instead of having fixed specifications.",
+    },
+    blog: {
+        title: "A place for my thoughts",
+        text: "In February 2019, I started writing articles for my blog as I was taking a plane to the farthest place I've even been to: San Francisco. I wrote my first three articles during that trip, and haven't been very consistent since then. I hope to find the time to write again.",
+        articles: [
+            {
+                number: 1,
+                date: "2019-02-12",
+                title: "Going to California",
+                file: blog1
+            },
+            {
+                number: 2,
+                date: "2019-02-13",
+                title: "Visiting the City",
+                file: blog2
+            },
+            {
+                number: 3,
+                date: "2019-02-20",
+                title: "The child in us",
+                file: blog3
+            }
+        ]
     },
     about: {
         education: {

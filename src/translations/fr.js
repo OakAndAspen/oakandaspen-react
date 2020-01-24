@@ -1,3 +1,6 @@
+import blog1 from "articles/blog1.md";
+import blog2 from "articles/blog2.md";
+import blog3 from "articles/blog3.md";
 import biodi from "images/biodi.png";
 import generationConnect from "images/generation-connect.png";
 import mtgmanager from "images/mtgmanager.png";
@@ -114,6 +117,30 @@ export default {
         tools: ["HTML", "CSS", "Javascript", "PHP", "MySQL", "React", "Symfony", "Grav", "Figma", "Illustrator", "PHPStorm", "WebStorm", "DataGrip", "Infomaniak", "DigitalOcean", "Bootstrap", "FontAwesome", "jQuery", "Doctrine"],
         title2: "Mon processus",
         text: "N'hésitez pas à me contacter si vous avez une idée. Nous discuterons ensemble de votre situation et je vous ferai une proposition personnalisée en fonction de vos besoins. J'aime travailler avec la méthode \"agile\" et réaliser un projet en plusieurs cycles au lieu d'avoir un cahier des charges fixe.",
+    },
+    blog: {
+        title: "Un endroit pour mes pensées",
+        text: "En février 2019, j'ai commencé à écrire un blog en prenant l'avion pour la plus lointaine destination de ma vie: San Francisco. J'ai écrit mes trois premiers articles en anglais pendant ce voyage, et n'ai pas été très régulière depuis. J'espère trouver bientôt un peu de temps pour écrire à nouveau.",
+        articles: [
+            {
+                number: 1,
+                date: "2019-02-12",
+                title: "Going to California",
+                file: blog1
+            },
+            {
+                number: 2,
+                date: "2019-02-13",
+                title: "Visiting the City",
+                file: blog2
+            },
+            {
+                number: 3,
+                date: "2019-02-20",
+                title: "The child in us",
+                file: blog3
+            }
+        ]
     },
     about: {
         education: {
