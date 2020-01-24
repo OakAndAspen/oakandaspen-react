@@ -1,7 +1,16 @@
 import {library} from "@fortawesome/fontawesome-svg-core";
 
-import {faCode, faBullhorn, faImage, faDice, faPaw, faMusic} from "@fortawesome/pro-regular-svg-icons";
+import {
+    faCode,
+    faBullhorn,
+    faImage,
+    faDice,
+    faPaw,
+    faMusic,
+    faBrowser,
+    faTools
+} from "@fortawesome/pro-regular-svg-icons";
 
 library.add(
-    faCode, faBullhorn, faImage, faDice, faPaw, faMusic
+    faCode, faBullhorn, faImage, faDice, faPaw, faMusic, faBrowser, faTools
 );

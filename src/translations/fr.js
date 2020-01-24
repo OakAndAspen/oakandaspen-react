@@ -30,13 +30,21 @@ export default {
         welcome: "Bienvenue sur mon site",
         firstParagraph: "Après avoir terminé mes études en ingénierie des médias en été 2019, j'ai choisi la voie difficile: celle de l'entreprenariat. Je tente actuellement de concilier mon travail de développeur en freelance et mon projet de startup. Je suis à la recherche de mes touts premiers mandats, alors n'hésitez pas à m'envoyer un email pour me faire part de vos idées de projets.",
         services: [
-            {icon: "code", title: "Développement", description: "Sites de présentation, applications web..."},
             {
-                icon: "bullhorn",
-                title: "Communication",
-                description: "Conseils en communication, campagnes marketing..."
+                icon: "browser",
+                title: "Sites web",
+                description: "Qu'il s'agisse d'un site vitrine, d'un blog ou d'un portfolio, je peux créer un site qui correspond exactement à vos besoins."
             },
-            {icon: "image", title: "Graphisme", description: "Affiches, flyers, cartes de visite..."}
+            {
+                icon: "code",
+                title: "Applications web",
+                description: "Je découvre régulièrement de nouveaux outils afin de pouvoir vous proposer une solution personnalisée."
+            },
+            {
+                icon: "image",
+                title: "Graphisme",
+                description: "Je peux créer vos affiches, flyers ou cartes de visites et définir une identité visuelle pour votre marque."
+            }
         ],
         latestWork: {
             title: "Quelques projets récents"
@@ -78,6 +86,34 @@ export default {
                 image: mtgmanager
             }
         ]
+    },
+    services: {
+        list: [
+            {
+                icon: "browser",
+                title: "Sites web",
+                description: "Qu'il s'agisse d'un site vitrine, d'un blog ou d'un portfolio, je peux créer un site qui correspond exactement à vos besoins."
+            },
+            {
+                icon: "code",
+                title: "Applications web",
+                description: "Je découvre régulièrement de nouveaux outils afin de pouvoir vous proposer une solution personnalisée."
+            },
+            {
+                icon: "tools",
+                title: "Maintenance",
+                description: "Je me charge de la maintenance des produits que je vous fournis, ainsi que de celle de votre site existant."
+            },
+            {
+                icon: "image",
+                title: "Graphisme",
+                description: "Je peux créer vos affiches, flyers ou cartes de visites et définir une identité visuelle pour votre marque."
+            }
+        ],
+        title1: "Mes outils",
+        tools: ["HTML", "CSS", "Javascript", "PHP", "MySQL", "React", "Symfony", "Grav", "Figma", "Illustrator", "PHPStorm", "WebStorm", "DataGrip", "Infomaniak", "DigitalOcean", "Bootstrap", "FontAwesome", "jQuery", "Doctrine"],
+        title2: "Mon processus",
+        text: "N'hésitez pas à me contacter si vous avez une idée. Nous discuterons ensemble de votre situation et je vous ferai une proposition personnalisée en fonction de vos besoins. J'aime travailler avec la méthode \"agile\" et réaliser un projet en plusieurs cycles au lieu d'avoir un cahier des charges fixe.",
     },
     about: {
         education: {

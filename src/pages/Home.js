@@ -1,7 +1,7 @@
+import {FontAwesomeIcon as FAI} from "@fortawesome/react-fontawesome";
 import HomeLayout from "layouts/HomeLayout";
 import React from "react";
 import {getLanguage} from "utils";
-import {FontAwesomeIcon as FAI} from "@fortawesome/react-fontawesome";
 
 export default class Home extends React.Component {
 
