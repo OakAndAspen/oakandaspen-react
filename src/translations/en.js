@@ -1,6 +1,9 @@
 import blog1 from "articles/blog1.md";
 import blog2 from "articles/blog2.md";
 import blog3 from "articles/blog3.md";
+import background1 from "images/carousel/background1.jpg";
+import background2 from "images/carousel/background2.jpg";
+import background3 from "images/carousel/background3.jpg";
 import {email} from "config/config";
 import biodi from "images/portfolio/biodi.png";
 import generationConnect from "images/portfolio/generation-connect.png";
@@ -17,6 +20,31 @@ export default {
         about: "About",
         contact: "Contact me",
     },
+    carousel: [
+        {
+            title: "Irina Despot",
+            subtitle: "Freelance web developer",
+            image: background1,
+            button: {
+                title: "My story",
+                url: "/about"
+            }
+        },
+        {
+            title: "Web development",
+            subtitle: "Browse my projects",
+            image: background2,
+            button: {
+                title: "Portfolio",
+                url: "/portfolio"
+            }
+        },
+        {
+            title: "Pup'herd",
+            subtitle: "My startup project",
+            image: background3
+        }
+    ],
     footnote: {
         title: "Have a project idea?",
         text: "I'm currently looking for freelance jobs. Don't hesitate to contact me by email or through my contact form.",

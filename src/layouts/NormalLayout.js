@@ -1,7 +1,7 @@
 import Footer from "components/Footer";
 import Nav from "components/Nav";
 import TitleBar from "components/TitleBar";
-import background from "images/background.jpg";
+import background from "images/carousel/background1.jpg";
 import React from "react";
 
 export default class NormalLayout extends React.Component {

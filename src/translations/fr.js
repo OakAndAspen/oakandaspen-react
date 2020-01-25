@@ -2,6 +2,9 @@ import blog1 from "articles/blog1.md";
 import blog2 from "articles/blog2.md";
 import blog3 from "articles/blog3.md";
 import {email} from "config/config";
+import background1 from "images/carousel/background1.jpg";
+import background2 from "images/carousel/background2.jpg";
+import background3 from "images/carousel/background3.jpg";
 import biodi from "images/portfolio/biodi.png";
 import generationConnect from "images/portfolio/generation-connect.png";
 import mtgmanager from "images/portfolio/mtgmanager.png";
@@ -17,6 +20,31 @@ export default {
         about: "À propos",
         contact: "Contact",
     },
+    carousel: [
+        {
+            title: "Irina Despot",
+            subtitle: "Développeuse web indépendante",
+            image: background1,
+            button: {
+                title: "Mon histoire",
+                url: "/about"
+            }
+        },
+        {
+            title: "Développement web",
+            subtitle: "Parcourez mes projets",
+            image: background2,
+            button: {
+                title: "Portfolio",
+                url: "/portfolio"
+            }
+        },
+        {
+            title: "Pup'herd",
+            subtitle: "Mon projet de startup",
+            image: background3
+        }
+    ],
     footnote: {
         title: "Vous avez une idée de projet?",
         text: "Je suis actuellement à la recherche de mandats. N'hésitez pas à me contacter par email ou via mon formulaire de contact.",
