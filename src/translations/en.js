@@ -1,6 +1,7 @@
 import blog1 from "articles/blog1.md";
 import blog2 from "articles/blog2.md";
 import blog3 from "articles/blog3.md";
+import {email} from "config/config";
 import biodi from "images/biodi.png";
 import generationConnect from "images/generation-connect.png";
 import mtgmanager from "images/mtgmanager.png";
@@ -209,6 +210,12 @@ export default {
         },
         title1: "My workplace",
         title2: "Contact information",
-        text: "Feel free to email at any time. I will do my best to answer quickly."
+        text: "Feel free to email at any time. I will do my best to answer quickly.",
+        messages: {
+            missing: "Please complete all fields.",
+            emailIncorrect: "The given email address is invalid.",
+            success: "Thank you for your message! I shall answer as soon as possible.",
+            error: "An unknown error has occured. Please send your request to " + email + ". Apologies for the inconvenience."
+        }
     }
 };

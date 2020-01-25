@@ -1,5 +1,5 @@
 import {FontAwesomeIcon as FAI} from "@fortawesome/react-fontawesome";
-import {facebookLink, gitHubLink, languages, linkedInLink} from "config/config";
+import {email, facebookLink, gitHubLink, languages, linkedInLink} from "config/config";
 import React from "react";
 import {getLanguage} from "utils";
 
@@ -25,7 +25,7 @@ export default class Footer extends React.Component {
                                         {lang.footer.address.street}<br/>
                                         {lang.footer.address.city}<br/>
                                         {lang.footer.address.country}<br/><br/>
-                                        <a href="mailto:contact@oakandaspen.ch">contact@oakandaspen.ch</a>
+                                        <span className="t-green">{email}</span>
                                     </p>
                                 </div>
                                 <div className="col-sm-6 col-lg-3">

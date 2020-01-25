@@ -8,9 +8,20 @@ import {
     faPaw,
     faMusic,
     faBrowser,
-    faTools
+    faTools,
+    faAngleLeft,
+    faAngleRight
 } from "@fortawesome/pro-regular-svg-icons";
 
 library.add(
-    faCode, faBullhorn, faImage, faDice, faPaw, faMusic, faBrowser, faTools
+    faCode,
+    faBullhorn,
+    faImage,
+    faDice,
+    faPaw,
+    faMusic,
+    faBrowser,
+    faTools,
+    faAngleLeft,
+    faAngleRight
 );

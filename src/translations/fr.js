@@ -1,6 +1,7 @@
 import blog1 from "articles/blog1.md";
 import blog2 from "articles/blog2.md";
 import blog3 from "articles/blog3.md";
+import {email} from "config/config";
 import biodi from "images/biodi.png";
 import generationConnect from "images/generation-connect.png";
 import mtgmanager from "images/mtgmanager.png";
@@ -209,6 +210,12 @@ export default {
         },
         title1: "Mon lieu de travail",
         title2: "Informations de contact",
-        text: "N'hésitez pas à m'envoyer un email à tout moment. Je ferai de mon mieux pour répondre rapidement."
+        text: "N'hésitez pas à m'envoyer un email à tout moment. Je ferai de mon mieux pour répondre rapidement.",
+        messages: {
+            missing: "Merci de remplir tous les champs.",
+            emailIncorrect: "L'adresse email renseignée n'est pas valide.",
+            success: "Merci pour votre message! Je vous répondrai au plus vite.",
+            error: "Une erreur inconnue est survenue. Merci d'adresser votre demande à " + email + ". Toutes nos excuses pour ce contretemps."
+        }
     }
 };

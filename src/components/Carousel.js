@@ -1,11 +1,16 @@
 import React from "react";
+import {FontAwesomeIcon as FAI} from "@fortawesome/react-fontawesome";
 
 export default class Carousel extends React.Component {
 
     render() {
         return (
-            <div className="py-4 t-white text-center">
-                <h1>Carousel here</h1>
+            <div className="d-flex justify-content-between align-items-center t-white text-center my-4 small-caps">
+                <FAI icon={["far", "angle-left"]} className="display-1 pointer"/>
+                <div className="t-white">
+                    <h1>Test content</h1>
+                </div>
+                <FAI icon={["far", "angle-right"]} className="display-1 pointer"/>
             </div>
         );
     }
