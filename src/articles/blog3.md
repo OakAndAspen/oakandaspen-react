@@ -12,6 +12,8 @@ When the girls finally got in, we started our journey further into the expo. Man
 
 After what seemed like twenty minutes, the other girls took their leave of us. The magic of science apparently did not appeal as much to them as to us two. We kept on going, passing through various sections, discovering games about music, photography, math, statistics, geometry, sounds, nature, chemistry and so many more.
 
+![The zen sandbox](/images/blog/blog3-1.jpg)
+
 We joined a few other fully grown adults around a "zen" sandbox, playing with tiny shovels and drawing figures in the sand on a rotating board. We had our laughing-out-loud moment at a pitch-altering device, that had us sound either like a tiny mouse or a swamp monster. We tried our rhythm skills at a fake drum kit. We found our birth dates in the infinite decimals of PI.
 
 And in these moments, we really awoke the child in us. The one we must silence during normal hours so that actual children can play. The one who cries out for freedom, for unbridled joy, for some innocent playtime.

@@ -33,10 +33,12 @@ export default class Blog extends React.Component {
             <NormalLayout lang={this.props.match.params.lang} title="Blog">
                 <div className="row">
                     <div className="col-8 pr-4 border-right text-center">
-                        <h1>{a.title}</h1>
+                        <h1 className="t-dark">{a.title}</h1>
                         <i>Blog #{a.number} - {moment(a.date).format("DD.MM.YYYY")}</i>
                         <hr/>
-                        <ReactMarkdown source={this.state.markdown} className="text-justify"/>
+                        <div className="text-justify" id="BlogMarkdown">
+                            <ReactMarkdown source={this.state.markdown}/>
+                        </div>
                     </div>
                     <div className="col-4 pl-4">
                         <h4 className="t-dark text-center mb-4">{this.lang.blog.title}</h4>

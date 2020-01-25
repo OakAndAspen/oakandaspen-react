@@ -2,11 +2,11 @@ import blog1 from "articles/blog1.md";
 import blog2 from "articles/blog2.md";
 import blog3 from "articles/blog3.md";
 import {email} from "config/config";
-import biodi from "images/biodi.png";
-import generationConnect from "images/generation-connect.png";
-import mtgmanager from "images/mtgmanager.png";
-import pawsome from "images/pawsome.png";
-import viviskes from "images/viviskes.png";
+import biodi from "images/portfolio/biodi.png";
+import generationConnect from "images/portfolio/generation-connect.png";
+import mtgmanager from "images/portfolio/mtgmanager.png";
+import pawsome from "images/portfolio/pawsome.png";
+import viviskes from "images/portfolio/viviskes.png";
 
 export default {
     nav: {

@@ -18,3 +18,7 @@
 footer p {
     font-size: 0.9em;
 }
+
+#BlogMarkdown img {
+    width: 100%;
+}

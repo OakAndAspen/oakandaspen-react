@@ -2,6 +2,8 @@
 
 I'm about three hours along on a flight from Zurich to San Francisco. The lights are off, even though it must be about 4 pm in Switzerland. I won't be the one to complain about it for sure. I'm constantly spying on / being distracted by the five different movies running on personal screen around me. Weird custom, though it makes sense.
 
+![Flying over Canada](/images/blog/blog1-1.jpg)
+
 Today is my first day out of Europe and on a long-distance flight. Not that I'm proud of it, knowing how bad such flights are for the environment… That will probable come up in a future rant I won't have been able to resist getting out of my head and on paper.
 
 It's one of these days where the whole day is something you've never done before. A whole new day, that puts an unusual perspective on things. Having to sit a full twelve hours in a plane, with no internet connection and limited battery life forces my brain to adapt and find a different output for its permanent raging storm of thoughts. As always, I first tried to numb it in easy, brainless movies, but after the second one I grew tired of it.
