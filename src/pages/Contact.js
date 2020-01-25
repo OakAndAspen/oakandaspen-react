@@ -1,9 +1,9 @@
 import {email, emailJsUserId} from "config/config";
+import emailjs from 'emailjs-com';
+import $ from "jquery";
 import NormalLayout from "layouts/NormalLayout";
 import React from "react";
 import {getLanguage} from "utils";
-import emailjs from 'emailjs-com';
-import $ from "jquery";
 
 export default class Contact extends React.Component {
 
@@ -34,7 +34,7 @@ export default class Contact extends React.Component {
             return null;
         }
 
-        if (!params.email.match(/[^@]+@[^\.]+\..+/)) {
+        if (!params.email.match(/[^@]+@[^.]+\..+/)) {
             this.setState({
                 message: this.lang.contact.messages.emailIncorrect,
                 color: "warning"

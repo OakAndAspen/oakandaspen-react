@@ -45,7 +45,7 @@ export default class Blog extends React.Component {
                         <ul>
                             {this.lang.blog.articles.sort((a, b) => a.date < b.date ? 1 : -1)
                                 .map(a =>
-                                    <li className="my-2">
+                                    <li className="my-2" key={a.number}>
                                         <a href={"/" + this.props.match.params.lang + "/blog/" + a.number}>
                                             Blog #{a.number} - {a.title}
                                         </a>

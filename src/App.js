@@ -1,4 +1,3 @@
-import "styles/main.css";
 import "config/fa-brand.config";
 import "config/fa-regular.config";
 import About from "pages/About";
@@ -9,6 +8,7 @@ import Portfolio from "pages/Portfolio";
 import Services from "pages/Services";
 import React from "react";
 import {BrowserRouter as Router, Redirect, Route, Switch} from "react-router-dom";
+import "styles/main.css";
 
 export default class App extends React.Component {
 

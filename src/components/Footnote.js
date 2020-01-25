@@ -1,5 +1,3 @@
-import {FontAwesomeIcon as FAI} from "@fortawesome/react-fontawesome";
-import {facebookLink, gitHubLink, languages, linkedInLink} from "config/config";
 import React from "react";
 import {getLanguage} from "utils";
 

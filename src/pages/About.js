@@ -1,6 +1,5 @@
 import {FontAwesomeIcon as FAI} from "@fortawesome/react-fontawesome";
 import Footnote from "components/Footnote";
-import HomeLayout from "layouts/HomeLayout";
 import NormalLayout from "layouts/NormalLayout";
 import React from "react";
 import {getLanguage} from "utils";
