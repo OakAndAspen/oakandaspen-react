@@ -71,7 +71,7 @@ export default class HomeHeader extends React.Component {
             <div className="d-flex justify-content-between align-items-center text-center my-4 py-4"
                  style={carouselStyle}>
                 <FAI icon={["far", "angle-left"]} style={arrowStyle}
-                     className="display-2 pointer" onClick={this.previous}/>
+                     className="display-1 pointer" onClick={this.previous}/>
                 <div className="t-white">
                     <h1 className="small-caps font-weight-bold">{currentSlide.title}</h1>
                     <h4>{currentSlide.subtitle}</h4>
@@ -81,7 +81,7 @@ export default class HomeHeader extends React.Component {
                     </a>}
                 </div>
                 <FAI icon={["far", "angle-right"]} style={arrowStyle}
-                     className="display-2 pointer" onClick={this.next}/>
+                     className="display-1 pointer" onClick={this.next}/>
             </div>
         );
     }

@@ -15,7 +15,7 @@ export default class Services extends React.Component {
                 <div className="row text-center my-4 py-4">
                     {this.lang.services.list.map(s =>
                         <div className="col-md-4" key={s.title}>
-                            <FAI icon={["far", s.icon]} className="display-3"/>
+                            <FAI icon={["far", s.icon]} className="display-2"/>
                             <h4 className="my-4">{s.title}</h4>
                             <p>{s.description}</p>
                         </div>

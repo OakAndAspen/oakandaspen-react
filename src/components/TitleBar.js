@@ -27,7 +27,7 @@ export default class TitleBar extends React.Component {
 
         return (
             <div className={"d-flex align-items-center text-" + textColor}>
-                <h1 style={logoStyle}>Oak&Aspen</h1>
+                <span style={logoStyle} className="display-1 mb-2">Oak&Aspen</span>
                 <span className="ml-auto">
                     {languages.map(l =>
                         <a href={"/" + l} style={linkStyle} key={l}

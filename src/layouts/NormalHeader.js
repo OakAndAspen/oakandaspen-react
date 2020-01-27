@@ -33,9 +33,9 @@ export default class NormalHeader extends React.Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-10 mx-auto py-4">
-                                <h2 className="t-white font-weight-bold m-0 small-caps">
+                                <h1 className="t-white font-weight-bold m-0 small-caps">
                                     {title}
-                                </h2>
+                                </h1>
                             </div>
                         </div>
                     </div>

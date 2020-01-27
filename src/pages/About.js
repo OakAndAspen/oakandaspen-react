@@ -40,7 +40,7 @@ export default class About extends React.Component {
                 <div className="row text-center py-2">
                     {this.lang.about.interests.hobbies.map(h =>
                         <div className="col-md-6 my-4" key={h.name}>
-                            <FAI icon={["far", h.icon]} className="display-4"/>
+                            <FAI icon={["far", h.icon]} className="display-2"/>
                             <h4 className="my-4">{h.name}</h4>
                             <p>{h.description}</p>
                         </div>

@@ -33,7 +33,7 @@ export default class Blog extends React.Component {
             <PageLayout langCode={this.props.match.params.lang} pageCode="blog">
                 <div className="row">
                     <div className="col-8 pr-4 border-right text-center">
-                        <h1 className="t-dark">{a.title}</h1>
+                        <h2 className="t-dark">{a.title}</h2>
                         <i>Blog #{a.number} - {moment(a.date).format("DD.MM.YYYY")}</i>
                         <hr/>
                         <div className="text-justify" id="BlogMarkdown">
