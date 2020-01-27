@@ -1,7 +1,7 @@
 import {FontAwesomeIcon as FAI} from "@fortawesome/react-fontawesome";
 import Badge from "components/Badge";
 import Footnote from "components/Footnote";
-import NormalLayout from "layouts/NormalLayout";
+import PageLayout from "layouts/PageLayout";
 import React from "react";
 import {getLanguage} from "utils";
 
@@ -11,7 +11,7 @@ export default class Services extends React.Component {
 
     render() {
         return (
-            <NormalLayout lang={this.props.match.params.lang} title="Services">
+            <PageLayout langCode={this.props.match.params.lang} pageCode="services">
                 <div className="row text-center my-4 py-4">
                     {this.lang.services.list.map(s =>
                         <div className="col-md-4" key={s.title}>
@@ -41,7 +41,7 @@ export default class Services extends React.Component {
 
                 <hr className="border-secondary"/>
                 <Footnote lang={this.props.match.params.lang}/>
-            </NormalLayout>
+            </PageLayout>
         );
     }
 }

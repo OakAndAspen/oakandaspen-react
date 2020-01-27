@@ -23,7 +23,7 @@ export default {
     carousel: [
         {
             title: "Irina Despot",
-            subtitle: "Développeuse web indépendante",
+            subtitle: "Développeur web indépendante",
             image: background1,
             button: {
                 title: "Mon histoire",
@@ -63,8 +63,12 @@ export default {
         }
     },
     home: {
-        title: "Accueil",
-        welcome: "Bienvenue sur mon site",
+        pageTitle: "Accueil",
+        meta: {
+            description: "Oak&Aspen est l'entreprise individuelle d'Irina Despot, développeur web indépendante.",
+            keywords: "Oak&Aspen, OakAndAspen, web, développement, Irina, Despot, freelance"
+        },
+        welcome: "En quelques mots",
         firstParagraph: "Après avoir terminé mes études en ingénierie des médias en été 2019, j'ai choisi la voie difficile: celle de l'entreprenariat. Je tente actuellement de concilier mon travail de développeur en freelance et mon projet de startup. Je suis à la recherche de mes touts premiers mandats, alors n'hésitez pas à m'envoyer un email pour me faire part de vos idées de projets.",
         services: [
             {
@@ -88,7 +92,11 @@ export default {
         }
     },
     portfolio: {
-        title: "Portfolio",
+        pageTitle: "Portfolio",
+        meta: {
+            description: "Voici mes derniers projets en date, allant du développement d'applications aux campagnes de communication.",
+            keywords: "Portfolio, projets, développement, communication, réalisations"
+        },
         subtitle: "Parcourez mes projets",
         text: "Du développement web aux campagnes de marketing, des projets personnels aux projets en équipe, j'ai déjà accumulé un certain panel de compétences. ",
         projects: [
@@ -125,6 +133,11 @@ export default {
         ]
     },
     services: {
+        pageTitle: "Services",
+        meta: {
+            description: "Découvrez ici les services que je propose ainsi que mes outils et ma méthode de travail.",
+            keywords: "Services, prestations, outils, méthode"
+        },
         list: [
             {
                 icon: "browser",
@@ -153,6 +166,11 @@ export default {
         text: "N'hésitez pas à me contacter si vous avez une idée. Nous discuterons ensemble de votre situation et je vous ferai une proposition personnalisée en fonction de vos besoins. J'aime travailler avec la méthode \"agile\" et réaliser un projet en plusieurs cycles au lieu d'avoir un cahier des charges fixe.",
     },
     blog: {
+        pageTitle: "Blog",
+        meta: {
+            description: "Ceci est mon blog, un endroit pour mettre mes pensées lorsque mon cerveau déborde.",
+            keywords: "Blog, articles, pensées"
+        },
         title: "Un endroit pour mes pensées",
         text: "En février 2019, j'ai commencé à écrire un blog en prenant l'avion pour la plus lointaine destination de ma vie: San Francisco. J'ai écrit mes trois premiers articles en anglais pendant ce voyage, et n'ai pas été très régulière depuis. J'espère trouver bientôt un peu de temps pour écrire à nouveau.",
         articles: [
@@ -177,6 +195,11 @@ export default {
         ]
     },
     about: {
+        pageTitle: "À propos",
+        meta: {
+            description: "Voici un aperçu de ma formation et de mes intérêts.",
+            keywords: "Irina, Despot, formation, hobbies, intérêts"
+        },
         education: {
             subtitle: "Ma formation",
             text: "Promise depuis mon plus jeune âge à une carrière littéraire, mon séjour au Gymnase de Burier m'a fait prendre un tournant inattendu. Presque dix ans après mon entrée au gymnase, je me retrouve avec un titre d'ingénieur, développeuse web indépendante et en plein lancement d'une startup. Voici mon parcours.",
@@ -229,6 +252,11 @@ export default {
         }
     },
     contact: {
+        pageTitle: "Contact",
+        meta: {
+            description: "Désirez-vous me contacter pour discuter d'un projet? Vous êtes au bon endroit.",
+            keywords: "Contact, email, message"
+        },
         form: {
             title: "Formulaire de contact",
             name: "Votre nom",

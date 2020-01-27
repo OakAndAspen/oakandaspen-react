@@ -1,10 +1,10 @@
 import blog1 from "articles/blog1.md";
 import blog2 from "articles/blog2.md";
 import blog3 from "articles/blog3.md";
+import {email} from "config/config";
 import background1 from "images/carousel/background1.jpg";
 import background2 from "images/carousel/background2.jpg";
 import background3 from "images/carousel/background3.jpg";
-import {email} from "config/config";
 import biodi from "images/portfolio/biodi.png";
 import generationConnect from "images/portfolio/generation-connect.png";
 import mtgmanager from "images/portfolio/mtgmanager.png";
@@ -63,8 +63,12 @@ export default {
         }
     },
     home: {
-        title: "Home",
-        welcome: "Welcome to my website",
+        pageTitle: "Home",
+        meta: {
+            description: "Oak&Aspen is Irina Despot's one-man freelancing business in web development.",
+            keywords: "Oak&Aspen, OakAndAspen, web, development, Irina, Despot, freelance"
+        },
+        welcome: "Welcome",
         firstParagraph: "After finishing my studies in media engineering, I chose the hard way: entrepreneurship. I'm trying to reconcile my work as a freelancer and my startup project. I'm currently looking for my very first jobs, so do not hesitate to contact me to share your project ideas.",
         services: [
             {
@@ -88,7 +92,11 @@ export default {
         }
     },
     portfolio: {
-        title: "Portfolio",
+        pageTitle: "Portfolio",
+        meta: {
+            description: "Here's a showcase of my latest projects, ranging from apps and websites to marketing campagns.",
+            keywords: "Portfolio, showcase, projects, developement, communication, achievements"
+        },
         subtitle: "Browse my projects",
         text: "From web development to marketing campaigns, from personal projects to team projects, I have accumulated a large range of skills.",
         projects: [
@@ -125,6 +133,11 @@ export default {
         ]
     },
     services: {
+        pageTitle: "Services",
+        meta: {
+            description: "Discover here the types of service I provide, as well as my tools and work process.",
+            keywords: "Services, tools, method"
+        },
         list: [
             {
                 icon: "browser",
@@ -153,6 +166,11 @@ export default {
         text: "Do not hesitate to contact me if you have an idea. We will discuss your situation and I will make a proposal that fits your needs. I like to work with the \"agile\" method and implement your project through multiple cycles instead of having fixed specifications.",
     },
     blog: {
+        pageTitle: "Blog",
+        meta: {
+            description: "This is my blog, a place to put my thoughts when my brain overflows.",
+            keywords: "Blog, articles, thoughts"
+        },
         title: "A place for my thoughts",
         text: "In February 2019, I started writing articles for my blog as I was taking a plane to the farthest place I've even been to: San Francisco. I wrote my first three articles during that trip, and haven't been very consistent since then. I hope to find the time to write again.",
         articles: [
@@ -177,6 +195,11 @@ export default {
         ]
     },
     about: {
+        pageTitle: "About",
+        meta: {
+            description: "Here is a summary of my education and my hobbies and interests.",
+            keywords: "Irina, Despot, education, hobbies, interests"
+        },
         education: {
             subtitle: "My education",
             text: "Promised to a literary career from a very young age, my life took an unexpected turn during my time in high school. Almost ten years later, I find myself with a title of engineer, doing freelance web development and launching a startup. Here's how I got there.",
@@ -229,6 +252,11 @@ export default {
         }
     },
     contact: {
+        pageTitle: "Contact",
+        meta: {
+            description: "Do you wish to contact me about a project? You're in the right place.",
+            keywords: "Contact, email, message"
+        },
         form: {
             title: "Contact form",
             name: "Your name",

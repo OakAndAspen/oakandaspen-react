@@ -1,13 +1,13 @@
 import {FontAwesomeIcon as FAI} from "@fortawesome/react-fontawesome";
-import Footer from "components/Footer";
 import Nav from "components/Nav";
 import TitleBar from "components/TitleBar";
+import PropTypes from "prop-types";
 import React from "react";
 import {getLanguage} from "utils";
 
-export default class HomeLayout extends React.Component {
+export default class HomeHeader extends React.Component {
 
-    lang = getLanguage(this.props.lang);
+    lang = getLanguage(this.props.langCode);
 
     state = {
         index: 0
@@ -42,28 +42,18 @@ export default class HomeLayout extends React.Component {
         };
 
         return (
-            <div>
                 <header className="py-4" style={headerStyle}>
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-10 mx-auto">
                                 <TitleBar theme="light"/>
                                 <hr className="border-light"/>
-                                <Nav theme="light" lang={this.props.lang}/>
+                                <Nav theme="light" lang={this.props.langCode}/>
                                 {this.renderCarousel(currentSlide)}
                             </div>
                         </div>
                     </div>
                 </header>
-                <section className="container py-4">
-                    <div className="row">
-                        <div className="col-lg-10 mx-auto">
-                            {this.props.children}
-                        </div>
-                    </div>
-                </section>
-                <Footer lang={this.props.lang}/>
-            </div>
         );
     }
 
@@ -86,7 +76,7 @@ export default class HomeLayout extends React.Component {
                     <h1 className="small-caps font-weight-bold">{currentSlide.title}</h1>
                     <h4>{currentSlide.subtitle}</h4>
                     {currentSlide.button &&
-                    <a className="btn b-green t-white mt-4" href={"/" + this.props.lang + currentSlide.button.url}>
+                    <a className="btn b-green t-white mt-4" href={"/" + this.props.langCode + currentSlide.button.url}>
                         {currentSlide.button.title}
                     </a>}
                 </div>
@@ -96,3 +86,7 @@ export default class HomeLayout extends React.Component {
         );
     }
 }
+
+HomeHeader.propTypes = {
+    langCode: PropTypes.string
+};

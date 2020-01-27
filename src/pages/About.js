@@ -1,6 +1,6 @@
 import {FontAwesomeIcon as FAI} from "@fortawesome/react-fontawesome";
 import Footnote from "components/Footnote";
-import NormalLayout from "layouts/NormalLayout";
+import PageLayout from "layouts/PageLayout";
 import React from "react";
 import {getLanguage} from "utils";
 
@@ -10,7 +10,7 @@ export default class About extends React.Component {
 
     render() {
         return (
-            <NormalLayout lang={this.props.match.params.lang} title="About">
+            <PageLayout langCode={this.props.match.params.lang} pageCode="about">
                 <div className="text-center py-2">
                     <h3 className="my-4 text-dark font-weight-bold">
                         {this.lang.about.education.subtitle}
@@ -49,7 +49,7 @@ export default class About extends React.Component {
 
                 <hr className="border-secondary"/>
                 <Footnote lang={this.props.match.params.lang}/>
-            </NormalLayout>
+            </PageLayout>
         );
     }
 }

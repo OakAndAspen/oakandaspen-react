@@ -1,7 +1,7 @@
 import {email, emailJsUserId} from "config/config";
 import emailjs from 'emailjs-com';
 import $ from "jquery";
-import NormalLayout from "layouts/NormalLayout";
+import PageLayout from "layouts/PageLayout";
 import React from "react";
 import {getLanguage} from "utils";
 
@@ -61,7 +61,7 @@ export default class Contact extends React.Component {
 
     render() {
         return (
-            <NormalLayout lang={this.props.match.params.lang} title="Contact">
+            <PageLayout langCode={this.props.match.params.lang} pageCode="contact">
                 <div className="row">
                     <div className="col-md-8">
                         {this.renderForm()}
@@ -70,7 +70,7 @@ export default class Contact extends React.Component {
                         {this.renderAside()}
                     </div>
                 </div>
-            </NormalLayout>
+            </PageLayout>
         );
     }
 

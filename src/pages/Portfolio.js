@@ -1,6 +1,6 @@
 import Badge from "components/Badge";
 import Footnote from "components/Footnote";
-import NormalLayout from "layouts/NormalLayout";
+import PageLayout from "layouts/PageLayout";
 import React from "react";
 import {getLanguage} from "utils";
 
@@ -10,7 +10,7 @@ export default class Portfolio extends React.Component {
 
     render() {
         return (
-            <NormalLayout lang={this.props.match.params.lang} title="Portfolio">
+            <PageLayout langCode={this.props.match.params.lang} pageCode="portfolio">
                 <div className="text-center">
                     <h3 className="my-4 text-dark font-weight-bold">
                         {this.lang.portfolio.subtitle}
@@ -31,7 +31,7 @@ export default class Portfolio extends React.Component {
 
                 <hr className="border-secondary"/>
                 <Footnote lang={this.props.match.params.lang}/>
-            </NormalLayout>
+            </PageLayout>
         );
     }
 }

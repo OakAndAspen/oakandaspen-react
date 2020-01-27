@@ -7,6 +7,7 @@ import Home from "pages/Home";
 import Portfolio from "pages/Portfolio";
 import Services from "pages/Services";
 import React from "react";
+import {Helmet} from "react-helmet";
 import {BrowserRouter as Router, Redirect, Route, Switch} from "react-router-dom";
 import "styles/main.css";
 
@@ -15,6 +16,9 @@ export default class App extends React.Component {
     render() {
         return (
             <div id="App">
+                <Helmet>
+                    <meta name="author" content="Irina Despot"/>
+                </Helmet>
                 <Router>
                     <Switch>
                         <Route exact path='/'>

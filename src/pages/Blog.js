@@ -1,4 +1,4 @@
-import NormalLayout from "layouts/NormalLayout";
+import PageLayout from "layouts/PageLayout";
 import moment from "moment";
 import React from "react";
 import ReactMarkdown from "react-markdown";
@@ -30,7 +30,7 @@ export default class Blog extends React.Component {
     render() {
         let a = this.state.article;
         return (
-            <NormalLayout lang={this.props.match.params.lang} title="Blog">
+            <PageLayout langCode={this.props.match.params.lang} pageCode="blog">
                 <div className="row">
                     <div className="col-8 pr-4 border-right text-center">
                         <h1 className="t-dark">{a.title}</h1>
@@ -56,7 +56,7 @@ export default class Blog extends React.Component {
                         </ul>
                     </div>
                 </div>
-            </NormalLayout>
+            </PageLayout>
         );
     }
 }
