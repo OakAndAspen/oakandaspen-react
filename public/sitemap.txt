@@ -13,6 +13,8 @@ https://oakandaspen.ch/fr/blog/2
 https://oakandaspen.ch/en/blog/2
 https://oakandaspen.ch/fr/blog/3
 https://oakandaspen.ch/en/blog/3
+https://oakandaspen.ch/fr/blog/4
+https://oakandaspen.ch/en/blog/4
 https://oakandaspen.ch/fr/about
 https://oakandaspen.ch/en/about
 https://oakandaspen.ch/fr/contact

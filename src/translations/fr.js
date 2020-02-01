@@ -1,6 +1,7 @@
 import blog1 from "articles/blog1.md";
 import blog2 from "articles/blog2.md";
 import blog3 from "articles/blog3.md";
+import blog4 from "articles/blog4.md";
 import {email} from "config/config";
 import background1 from "images/carousel/background1.jpg";
 import background2 from "images/carousel/background2.jpg";
@@ -191,6 +192,12 @@ export default {
                 date: "2019-02-20",
                 title: "The child in us",
                 file: blog3
+            },
+            {
+                number: 4,
+                date: "2020-02-01",
+                title: "Lessons learned",
+                file: blog4
             }
         ]
     },
