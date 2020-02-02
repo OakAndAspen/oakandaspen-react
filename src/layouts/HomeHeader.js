@@ -10,7 +10,8 @@ export default class HomeHeader extends React.Component {
     lang = getLanguage(this.props.langCode);
 
     state = {
-        index: 0
+        index: 0,
+        navOpen: false
     };
 
     constructor(props) {
@@ -38,7 +39,7 @@ export default class HomeHeader extends React.Component {
         let headerStyle = {
             backgroundImage: "url(" + currentSlide.image + ")",
             backgroundSize: "cover",
-            backgroundPosition: "center center"
+            backgroundPosition: "top center"
         };
 
         return (
@@ -46,9 +47,10 @@ export default class HomeHeader extends React.Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-10 mx-auto">
-                                <TitleBar theme="light"/>
+                                <TitleBar theme="light"
+                                          onToggleNav={() => this.setState({navOpen: !this.state.navOpen})}/>
                                 <hr className="border-light"/>
-                                <Nav theme="light" lang={this.props.langCode}/>
+                                <Nav theme="light" lang={this.props.langCode} isOpen={this.state.navOpen}/>
                                 {this.renderCarousel(currentSlide)}
                             </div>
                         </div>

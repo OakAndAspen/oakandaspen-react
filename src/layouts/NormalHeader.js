@@ -7,6 +7,10 @@ import {getLanguage} from "utils";
 
 export default class NormalHeader extends React.Component {
 
+    state = {
+        navOpen: false
+    };
+
     render() {
 
         let lang = getLanguage(this.props.langCode);
@@ -23,9 +27,10 @@ export default class NormalHeader extends React.Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-10 mx-auto">
-                            <TitleBar theme="dark"/>
+                            <TitleBar theme="dark"
+                                      onToggleNav={() => this.setState({navOpen: !this.state.navOpen})}/>
                             <hr className="border-secondary"/>
-                            <Nav theme="dark" lang={this.props.langCode}/>
+                            <Nav theme="dark" lang={this.props.langCode} isOpen={this.state.navOpen}/>
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,5 @@
 import {languages} from "config/config";
+import PropTypes from "prop-types";
 import React from "react";
 import {getLanguage} from "utils";
 
@@ -11,6 +12,10 @@ export default class Nav extends React.Component {
 
         let navStyle = {
             fontVariant: "all-small-caps"
+        };
+
+        let liStyle = {
+            listStyleType: "none"
         };
 
         let aStyle = {
@@ -29,23 +34,26 @@ export default class Nav extends React.Component {
 
         let linkColor = this.props.theme === "light" ? "light" : "secondary";
 
+        let navClass = this.props.isOpen ? "" : " d-none d-md-block"
+
         return (
-            <nav className="navbar navbar-expand-md px-0" style={navStyle}>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"/>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
-                        {entries.map(e =>
-                            <li className="nav-item active" key={e.label}>
-                                <a className={"nav-link text-" + linkColor}
-                                   href={"/" + langCode + e.url} style={aStyle}>{e.label}</a>
-                            </li>
-                        )}
-                    </ul>
-                </div>
+            <nav className={"px-0" + navClass} style={navStyle}>
+                <ul className="m-0 p-0">
+                    {entries.map(e =>
+                        <li key={e.label} style={liStyle} className="d-inline-block mr-3">
+                            <a className={"text-" + linkColor}
+                               href={"/" + langCode + e.url} style={aStyle}>{e.label}</a>
+                        </li>
+                    )}
+                </ul>
             </nav>
         );
     }
 }
+
+
+Nav.propTypes = {
+    theme: PropTypes.string,
+    lang: PropTypes.string,
+    isOpen: PropTypes.bool
+};

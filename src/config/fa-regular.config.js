@@ -3,6 +3,7 @@ import {library} from "@fortawesome/fontawesome-svg-core";
 import {
     faAngleLeft,
     faAngleRight,
+    faBars,
     faBrowser,
     faBullhorn,
     faCode,
@@ -23,5 +24,6 @@ library.add(
     faBrowser,
     faTools,
     faAngleLeft,
-    faAngleRight
+    faAngleRight,
+    faBars
 );
