@@ -32,7 +32,7 @@ export default class Blog extends React.Component {
         return (
             <PageLayout langCode={this.props.match.params.lang} pageCode="blog">
                 <div className="row">
-                    <div className="col-8 pr-4 border-right text-center">
+                    <div className="col-md-8 order-2 order-md-1 pr-4 border-right text-center mb-4">
                         <h2 className="t-dark">{a.title}</h2>
                         <i>Blog #{a.number} - {moment(a.date).format("DD.MM.YYYY")}</i>
                         <hr/>
@@ -40,7 +40,7 @@ export default class Blog extends React.Component {
                             <ReactMarkdown source={this.state.markdown}/>
                         </div>
                     </div>
-                    <div className="col-4 pl-4">
+                    <div className="col-md-4 pl-4 mb-4 order-1 order-md-2">
                         <h4 className="t-dark text-center mb-4">{this.lang.blog.title}</h4>
                         <p className="text-justify">{this.lang.blog.text}</p>
                         <h4 className="t-dark text-center mb-4">Archive</h4>

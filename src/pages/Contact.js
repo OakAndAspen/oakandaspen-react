@@ -63,10 +63,10 @@ export default class Contact extends React.Component {
         return (
             <PageLayout langCode={this.props.match.params.lang} pageCode="contact">
                 <div className="row">
-                    <div className="col-md-8">
+                    <div className="col-md-8 mb-4">
                         {this.renderForm()}
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 mb-4">
                         {this.renderAside()}
                     </div>
                 </div>

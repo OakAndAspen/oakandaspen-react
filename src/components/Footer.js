@@ -20,7 +20,7 @@ export default class Footer extends React.Component {
                                     <p className="t-gray">{lang.footer.text}</p>
                                 </div>
                                 <div className="col-sm-6 col-lg-3">
-                                    <h4 className="small-caps font-weight-bold mb-4 t-white">Contact info</h4>
+                                    <h4 className="small-caps font-weight-bold mb-4 t-white">{lang.footer.title1}</h4>
                                     <p className="t-gray">
                                         {lang.footer.address.street}<br/>
                                         {lang.footer.address.city}<br/>
@@ -29,7 +29,7 @@ export default class Footer extends React.Component {
                                     </p>
                                 </div>
                                 <div className="col-sm-6 col-lg-3">
-                                    <h4 className="small-caps font-weight-bold mb-4 t-white">Find me on</h4>
+                                    <h4 className="small-caps font-weight-bold mb-4 t-white">{lang.footer.title2}</h4>
                                     <a href={facebookLink} className="d-block mb-1 small-caps">
                                         <FAI icon={["fab", "facebook-f"]} className="mr-2"/>
                                         <span>Facebook</span>

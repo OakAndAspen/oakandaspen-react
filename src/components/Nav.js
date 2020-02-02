@@ -37,7 +37,7 @@ export default class Nav extends React.Component {
         let navClass = this.props.isOpen ? "" : " d-none d-md-block"
 
         return (
-            <nav className={"px-0" + navClass} style={navStyle}>
+            <nav className={"px-0 my-4" + navClass} style={navStyle}>
                 <ul className="m-0 p-0">
                     {entries.map(e =>
                         <li key={e.label} style={liStyle} className="d-inline-block mr-3">
